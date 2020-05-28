@@ -1,0 +1,319 @@
+
+*{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../img/blue.png");
+    background-size: auto 100vh;
+    font-family: 'Courier Prime', monospace;
+    height: 100vh;
+    font-size: 10px;
+}
+
+@media(min-width: 400px) {
+    body{
+        font-size: 14px;
+    }
+    
+}
+
+@media(min-width: 600px) {
+    body{
+        font-size: 18px;
+    }
+    
+}
+
+
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+}
+
+.menu ul{
+    display:flex;
+    justify-content: space-around
+}
+ 
+ 
+.menu li{
+ 
+    list-style: none;
+}
+ 
+.menu a{
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 1s, color 1s;
+}
+
+
+.menu a:active,
+.menu a:hover{
+    background-color: teal;
+    color: whitesmoke;
+    
+}
+
+a {
+    color: teal;  
+    text-decoration: none;
+}
+ 
+a:hover{
+    text-decoration: underline;
+}
+ 
+.hacker{
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+    transition: all 2s;
+    animation: linear 2s titulos forwards;
+}
+
+@keyframes titulos{
+    100%{
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+.content,
+.centro,
+.site-subtitle,
+.site-title{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.site-title{
+    font-size: 4em;
+    font-family: 'Kalam', cursive;
+}
+ 
+.site-subtitle{
+    font-style: italic;
+    font-family: 'kalam', cursive;
+    line-height: 4em;
+}
+ 
+
+.sobre,
+.portfolio{
+
+    padding: 3em;
+    min-height: 100vh;
+}
+
+.midia{
+    padding: 4em;
+    min-height: 50vh;
+}
+
+.content{
+    padding: 4em;
+    min-height: 50vh;
+}
+
+@media(min-width: 1200px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+
+    }
+
+}
+
+.sobre h2,
+.midia h2,
+.content h2,
+.portfolio h2{
+    font-family: 'kalam', cursive;
+    color: whitesmoke;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+
+.sobre p{
+
+    color: whitesmoke;
+    margin-bottom: 1.4em;
+    text-indent: 1em;
+    text-align: justify;
+    
+}
+
+.sobre a{
+    color: white;
+    text-decoration: underline;
+}
+
+.sobre a:hover{
+    background-color: darkcyan;
+    text-decoration: underline;
+    color: lightgreen;
+}
+
+.sobre .perfil{
+    clip-path: circle(50% at 50% 50%);
+    margin-left: 2em;
+    
+}
+
+
+
+@media(min-width: 600px){
+    .sobre .perfil{
+        float: right;
+        clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    }
+}
+
+
+.portfolio .grid{
+    display: grid;
+    gap: 2em;
+}
+
+@media(min-width: 578px){
+    .portfolio .grid{
+    grid-template-columns: 250px 250px;
+    }
+
+}
+
+
+@media(min-width: 919px){
+    .portfolio .grid{
+    grid-template-columns: repeat(3, 290px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
+    }
+
+}
+
+
+.portfolio figure{
+
+    text-align: center;
+}
+
+.img-portfolio{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    object-position: left bottom;
+    transition: transform 500ms;
+
+}
+
+/*.img-portfolio:hover{
+    transform: scale(1.1)
+}*/
+
+.flip-card{
+    height: 180px;
+    perspective: 1000px;
+}
+
+
+.flip-card:hover .fig{
+    transform: rotateY(180deg);
+}
+
+
+.fig{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+
+.fig-front,
+.fig-back{
+    backface-visibility: hidden;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.fig-back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .7);
+    height: 180px;
+    width: 100%;
+    transform: rotateY(180deg);
+}
+
+.midia .icons{
+    text-align: center;
+}
+
+.midia a{
+    color: whitesmoke;
+    font-size: 3em;
+    padding: 0.5em;
+    transition: text-shadow 1s;
+}
+.midia a:active,
+.midia a:hover{
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgba(255,255,255,1);
+}
+
+.color{
+    color: whitesmoke;
+}
+
+
+/*TESTE CSS FORMULÁRIO*/
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.contato{
+    width: 100%;
+    max-width: 500px;
+}
+
+.form{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.field{
+
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd; 
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+textarea{
+    height: 150px;
+}
+

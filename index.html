@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Ribeiro</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Kalam&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e67393e0ea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul class="container">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#midia">Mídias</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <div class="hacker">
+                <h1 class="site-title">Meu nome é Matheus</h1>
+                <h2 class="site-subtitle"> Sejam bem vindos ao meu portfólio web :)</h2>
+                <div class="flip-card">
+                    <div class="fig">
+                        <figure class="centro">
+                            <img src="./img/icon.png" alt="Sou Programador Web">
+                            <figcaption>Gosto de programar</figcaption>
+                        </figure>
+                    </div>
+                <script>
+                    function typeWriter(elemento) {
+                        const textoArray = elemento.innerHTML.split('');
+                        elemento.innerHTML = '';
+                        textoArray.forEach((letra, i) => {
+                            setTimeout(() => elemento.innerHTML += letra, 75 * i);
+                        });
+                    }
+                    const titulo = document.querySelector('h1');
+                    const titulo2 = document.querySelector('h2');
+                    typeWriter(titulo);
+                    typeWriter(titulo2);
+                </script>
+                  
+            </div>
+        </section>
+        
+    </header>
+        <section class="sobre container" id="sobre">
+ 
+            <h2>Sobre</h2>
+            
+            <figure class="perfil">
+                <img src="./img/ue.jpg" alt="Perfil">
+            </figure>
+            
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore incidunt obcaecati quo ipsa cumque, sequi amet doloremque quisquam itaque facilis, soluta modi dolorum, minus omnis cupiditate sapiente dolores eius iure?
+                Aspernatur, inventore itaque, corporis hic eaque sunt repellendus unde natus provident quisquam dolores accusantium architecto possimus magni 
+            </p>
+            
+            <p>
+                Soluta sapiente dolore atque ratione veniam, tempora itaque accusantium excepturi magnam, minima, quam esse quasi! Aliquam facere sequi totam earum debitis vitae rem ad. Laboriosam sed animi blanditiis vitae dolor.
+                Officia sapiente sequi molestiae perferendis, nobis maiores, voluptates quia rerum accusamus, labore id nihil quibusdam voluptas ducimus odio amet dolorem? Nihil quis voluptate recusandae.
+            </p>           
+            <p>
+                Quero agradecer os meus amigos e aos professores que me auxiliaram durante essa caminhada. <a href="https://ead.ifrn.edu.br/portal/">IFRN EAD</a>;)
+            </p>
+ 
+ 
+        </section>
+        <section class="portfolio container" id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="grid">
+                
+                <div class="flip-card">
+                    <div class="fig">
+                        <figure class="fig-front">
+                            <img class="img-portfolio" src="./img/web.jpg" alt="Pesquisa">
+                            <figcaption class="color">Pesquisa</figcaption>
+                        </figure>
+                        <div class="fig-back">
+                            <p>
+                                Aplicações com Arduino<br/>
+                                Quantum Computer<br/>
+                            </p>                                
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card">
+                    <div class="fig">
+                        <figure class="fig-front">
+                            <img class="img-portfolio" src="./img/designcool.jpg" alt=">Web Design">
+                            <figcaption class="color">Web Design</figcaption>
+                        </figure>
+                        <div class="fig-back">
+                            <p>
+                                Boas práticas com o CSS<br/>
+                                Aplicação com JS<br/>
+                                Portfólio Responsivo<br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card">
+                    <div class="fig">
+                        <figure class="fig-front">
+                            <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Redes">
+                            <figcaption class="color">Redes</figcaption>
+                        </figure>
+                        <div class="fig-back">
+                            <p>
+                                Pilha TCP/IP<br/>
+                                Protocolos de Roteamento<br/>
+                                Cabeamento<br/>
+                                UNIX<br/>
+                                Windows<br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="flip-card">
+                    <div class="fig">
+                        <figure class="fig-front">
+                            <img class="img-portfolio" src="./img/Games.png" alt="Hobby">
+                            <figcaption class="color">Hobby</figcaption>
+                        </figure>
+                        <div class="fig-back">
+                            <p>
+                                Games<br/>
+                                Ler ficção<br/>
+                                Filmes de terror<br/>
+                                Estudar programação<br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="flip-card">
+                    <div class="fig">
+                        <figure>
+                            <img class="img-portfolio" src="./img/django.jpg" alt="Ferramentas favoritas">
+                            <figcaption class="color">Ferramentas favoritas</figcaption>
+                        </figure>
+                        <div class="fig-back">
+                            <p>
+                                Python<br/>
+                                Django<br/>
+                                Postgresql<br/>
+                                MySQL<br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                    
+            </div>
+        </section>
+        <section class="midia container" id="midia">
+            <h2>Minhas mídias</h2>
+            <div class="grid icons">
+                <a target="_blank" href="https://github.com/mathrib?tab=repositories"><i class="fab fa-github-alt"></i></a>
+                <a target="_blank" href="https://gitlab.devops.ifrn.edu.br/20181014050004"><i class="fab fa-gitlab"></i></a>
+                <a target="_blank" href="https://www.instagram.com/matheus_rib19/?hl=pt-br"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/matheus-ribeiro-da-fonseca-68549a178/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </section>    
+
+        <section class="content" id="contato">
+            
+            <div class="contato">
+                <h2>Formulário de contato</h2>
+                <form class="form" method="POST" action="email.php">
+                    <input class="field" name="name" placeholder="Nome">
+                    <input class="field" name="email" placeholder="E-mail">
+                    <textarea class="field" name="message" placeholder="Digite sua mensagem aqui."></textarea>
+                    <input class="field" type="submit" value="Enviar">
+                </form>
+            </div>
+
+        </section>
+
+</body>
+</html>
+ 
+ 
+
